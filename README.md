@@ -24,3 +24,6 @@
 골키퍼 종합점수 계산 : (reflexes * 0.5) + (diving * 0.5)
 
 ### 선수 데이터는 임의로 생성해냈다.
+
+![다이어그램](https://github.com/user-attachments/assets/fe12bbff-5b66-442b-a41e-7c43405ac78a)
+![시연영상](https://github.com/user-attachments/assets/edca0dd0-6218-4a0d-87fe-417c7456fcb1)
