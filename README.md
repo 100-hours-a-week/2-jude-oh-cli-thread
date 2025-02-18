@@ -45,5 +45,6 @@
 스태미나에 따른 스탯을 보고 **교체타이밍**을 알 수 있다. 
 골키퍼는 부상외의 교체는 극히 드물기 때문에 필드 플레이어에만 적용했다.
 
-![다이어그램](https://github.com/user-attachments/assets/fe12bbff-5b66-442b-a41e-7c43405ac78a)
+![다이어그램]https://github.com/user-attachments/assets/37f8f33f-a7ce-410f-9abd-396f263bef64)
+
 
