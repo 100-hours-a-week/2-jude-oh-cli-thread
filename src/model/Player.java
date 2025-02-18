@@ -2,9 +2,10 @@ package model;
 
 public abstract class Player {
     public String name, position;
-    public int speed, stamina, shooting, dribbling, tackling, interceptions, reflexes, diving;
-
-    public Player(String name, String position, int speed, int stamina, int shooting, int dribbling, int tackling, int interceptions, int reflexes, int diving) {
+    public int speed, shooting, dribbling, tackling, interceptions, reflexes, diving;
+    public double stamina;
+    
+    public Player(String name, String position, int speed, double stamina, int shooting, int dribbling, int tackling, int interceptions, int reflexes, int diving) {
         this.name = name;
         this.position = position;
         this.speed = speed;
@@ -24,10 +25,14 @@ public abstract class Player {
         return name;
     }
 
-    public int getStamina() {
+    public double getStamina() {
         return stamina;
     }
 
+    public String getPosition() {
+        return position;
+    }
+}
 
 //    public void displayStats() {
 //        System.out.println("\n🏆 선수: " + name + " | 포지션: " + position);
@@ -37,4 +42,4 @@ public abstract class Player {
 //        System.out.println("🧤 Reflexes: " + reflexes + " | 🏆 Diving: " + diving);
 //        System.out.println("📊 종합 점수: " + calculateOverallScore(position));
 //    }
-}
+

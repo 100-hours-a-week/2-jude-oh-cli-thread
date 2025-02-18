@@ -1,7 +1,7 @@
 package model;
 
 public class Forward extends FieldPlayer {
-    public Forward(String name, int speed, int stamina, int shooting, int dribbling, double staminaReductionRate) {
+    public Forward(String name, int speed, double stamina, int shooting, int dribbling, double staminaReductionRate) {
         super(name, "FW", speed, stamina, shooting, dribbling, 50, 50, staminaReductionRate);
         
     }

@@ -1,7 +1,7 @@
 package model;
 
 public class Defender extends FieldPlayer {
-    public Defender(String name, int speed, int stamina, int tackling, int interceptions, double staminaReductionRate) {
+    public Defender(String name, int speed, double stamina, int tackling, int interceptions, double staminaReductionRate) {
         super(name, "DF", speed, stamina, 60, 60, tackling, interceptions, staminaReductionRate);
     }
 

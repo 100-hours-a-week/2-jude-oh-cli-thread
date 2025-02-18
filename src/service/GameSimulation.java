@@ -61,17 +61,42 @@ public class GameSimulation {
         return isRunning;
     }
 
+    // private void displayPlayerScores() {
+    //     synchronized (players) {
+    //         // 선수들의 총점 계산 후 내림차순 정렬
+    //         Collections.sort(players, Comparator.comparingDouble(Player::calculateOverallScore).reversed());
+
+    //         System.out.println("\n📊 현재 선수들의 스탯 (내림차순):");
+    //         for (Player p : players) {
+    //             if (p instanceof FieldPlayer) { // 필드 플레이어만 출력
+    //                 System.out.println(p.getName() + " - 스탯: " + p.calculateOverallScore() + " | 스태미나: " + ((FieldPlayer) p).stamina);
+    //             }
+    //         }
+    //     }
+    // }
+
     private void displayPlayerScores() {
         synchronized (players) {
             // 선수들의 총점 계산 후 내림차순 정렬
             Collections.sort(players, Comparator.comparingDouble(Player::calculateOverallScore).reversed());
-
-            System.out.println("\n📊 현재 선수들의 총점 (내림차순):");
+    
+            System.out.println("\n📊 현재 선수들의 스탯 (내림차순):");
+            System.out.println("-------------------------------------------------------------");
+            System.out.printf("| %-15s | %-7s | %-10s | %-5s |\n", "이름", "포지션", "스탯", "스태미나");
+            System.out.println("-------------------------------------------------------------");
+    
             for (Player p : players) {
                 if (p instanceof FieldPlayer) { // 필드 플레이어만 출력
-                    System.out.println(p.getName() + " - 총점: " + p.calculateOverallScore() + " | 스태미나: " + ((FieldPlayer) p).stamina);
+                    System.out.printf("| %-15s | %-7s | %-10.1f | %-8.1f |\n", 
+                        p.getName(), 
+                        p.getPosition(), 
+                        (double) p.calculateOverallScore(), 
+                        (double) ((FieldPlayer) p).stamina
+                    );
                 }
             }
+            System.out.println("-------------------------------------------------------------");
         }
     }
+    
 }

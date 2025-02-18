@@ -17,10 +17,10 @@ public class FootballGame {
         PlayerComparison comparison = new PlayerComparison(players);
 
         // 토트넘 선수 추가
-        players.add(new Forward("손흥민", 90, 105, 95, 88, 0.4));  // 체력 좋음 (0.8~1.5 감소)
+        players.add(new Forward("손흥민", 90, 105, 95, 88, 0.6));  // 체력 좋음 (0.8~1.5 감소)
         players.add(new Forward("해리 케인", 88, 108, 94, 85, 0.3)); // 체력 최강 (0.8~1.5 감소)
         players.add(new Forward("쿨루셉스키", 85, 98, 90, 83, 0.9)); // 보통 (1.5~2.5 감소)
-        players.add(new Defender("로메로", 75, 110, 92, 88, 0.8));  // 체력 최강 (0.8~1.5 감소)
+        players.add(new Defender("로메로", 75, 110, 92, 88, 0.7));  // 체력 최강 (0.8~1.5 감소)
         players.add(new Defender("다이어", 73, 97, 87, 84, 0.9));  // 보통 (1.5~2.5 감소)
         players.add(new Goalkeeper("요리스", 95, 94)); // 골키퍼는 스태미나 감소 없음
 
