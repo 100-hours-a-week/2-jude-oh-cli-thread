@@ -1,6 +1,6 @@
 package model;
 
-public class Player {
+public abstract class Player {
     public String name, position;
     public int speed, stamina, shooting, dribbling, tackling, interceptions, reflexes, diving;
 
@@ -17,8 +17,15 @@ public class Player {
         this.diving = diving;
     }
 
-    public double calculateOverallScore(String position) {
-    	return 0;
+    // **추상 메서드 선언**
+    public abstract double calculateOverallScore();
+
+    public String getName() {
+        return name;
+    }
+
+    public int getStamina() {
+        return stamina;
     }
 
 

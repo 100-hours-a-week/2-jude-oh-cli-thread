@@ -6,7 +6,8 @@ public class Goalkeeper extends Player {
     }
 
     @Override
-    public double calculateOverallScore(String position) {
-        return ((reflexes * 0.5) + (diving * 0.5));
+    public double calculateOverallScore() {
+        double score = ((reflexes * 0.5) + (diving * 0.5));
+        return Math.round(score * 10.0) / 10.0;
     }
 }

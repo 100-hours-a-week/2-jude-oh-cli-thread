@@ -72,7 +72,7 @@ public class PlayerComparison {
                     case "인터셉트": return Integer.compare(p2.interceptions, p1.interceptions);
                     case "반사": return Integer.compare(p2.reflexes, p1.reflexes);
                     case "다이빙": return Integer.compare(p2.diving, p1.diving);
-                    case "종합점수": return Double.compare(p2.calculateOverallScore(position), p1.calculateOverallScore(position));
+                    case "종합점수": return Double.compare(p2.calculateOverallScore(), p1.calculateOverallScore());
                     default: return 0;
                 }
             });
@@ -92,7 +92,7 @@ public class PlayerComparison {
             case "인터셉트": return p.interceptions;
             case "반사": return p.reflexes;
             case "다이빙": return p.diving;
-            case "종합점수": return (int) p.calculateOverallScore(p.position);
+            case "종합점수": return (int) p.calculateOverallScore();
             default: return 0;
         }
     }
