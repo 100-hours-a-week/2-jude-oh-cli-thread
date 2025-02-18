@@ -26,5 +26,4 @@
 ### 선수 데이터는 임의로 생성해냈다.
 
 ![다이어그램](https://github.com/user-attachments/assets/fe12bbff-5b66-442b-a41e-7c43405ac78a)
-![화면 기록 2025-02-17 17 10 48](https://github.com/user-attachments/assets/f9a08a57-3d67-4a69-b9b8-717f6c3187ee)
 
